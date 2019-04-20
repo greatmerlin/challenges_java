@@ -1,5 +1,11 @@
 package com.theo;
 
+/**
+ * A simple challenge to turn kilometer to Miles, in a rounded up form by calling the Math.round() Method.
+ * Hint: 1 Mile = 1.609 Kilometers
+ * The second Method "printConversion" calls the "toMilesPerHour" Method in order to work.
+ * */
+
 public class Main {
 
     public static void main(String[] args) {
