@@ -11,9 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Pane myPane = FXMLLoader.load(getClass().getResource("fxml_mainWindow.fxml"));
+        Pane myPane = FXMLLoader.load(getClass().getResource("fmxl_Main_Window.fxml"));
 
-        Scene myScene = new Scene(myPane);
+        Scene myScene = new Scene(myPane, 500,500);
 
         primaryStage.setTitle("My Business App");
         primaryStage.setScene(myScene);
