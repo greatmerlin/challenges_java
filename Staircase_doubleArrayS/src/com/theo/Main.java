@@ -24,7 +24,7 @@ public class Main {
 
                 System.out.print(" ");
             }
-                for(int j = n-i-1 ; j< n; j++) {
+                for(int z = n-i-1 ; z < n; z++) {
 
                     System.out.print("#");
                 }
