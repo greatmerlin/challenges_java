@@ -14,28 +14,23 @@ import java.util.*;
 
 public class Main {
 
-    // also solved with a double array
-
     static void staircase(int n) {
 
-        for(int i=0 ; i < n ; i++) {
+        StringBuilder builder = new StringBuilder();
 
-            for(int j = 0; j <= n-i-2; j++) {
-
-                System.out.print(" ");
-            }
-<<<<<<< HEAD
-                for(int j = n-i-1 ; j< n; j++) {
-=======
-                for(int z = n-i-1 ; z < n; z++) {
->>>>>>> 9b0fd077e0f7eb8177028c140176d4abf52dec01
-
-                    System.out.print("#");
-                }
-
-         System.out.println();
+        for (int i = 0; i < n ; i++) {
+            builder.append(" ");
         }
 
+        int j = 0;
+
+        for (int i = 1; i <= n; i++) {
+            builder.replace(    builder.length() - i,
+                                builder.length() - j,
+                                "#");
+            System.out.println(builder);
+            j++;
+        }
     }
 
     private static final Scanner scanner = new Scanner(System.in);
